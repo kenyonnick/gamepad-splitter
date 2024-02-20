@@ -68,7 +68,6 @@ def map_gamepad_inputs(virtual):
                 exit()
             
             if event.type == pygame.JOYBUTTONDOWN:
-                print(event)
                 try:
                     mapping = BUTTON_MAPPING[event.instance_id][event.button]
                     if mapping in DPAD_IDS:
