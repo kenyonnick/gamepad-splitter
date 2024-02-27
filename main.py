@@ -111,6 +111,7 @@ def map_gamepad_inputs(virtual):
         virtual.left_joystick_float(x_value_float=leftStickX, y_value_float=leftStickY)
         virtual.right_joystick_float(x_value_float=rightStickX, y_value_float=rightStickY)
         virtual.update()
+        pygame.time.wait(1)
 
 def main():
     # need to hold onto these to keep them alive
